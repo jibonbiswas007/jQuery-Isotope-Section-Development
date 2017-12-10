@@ -1,0 +1,204 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Your template name 
+    Template URI: http://bootexperts.com
+    Description: This is html5 template
+    Author: BootExperts
+    Author URI: http://bootexperts.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	
+    1. Theme Default CSS (body, link color, section etc)
+
+-----------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+html, body {height: 100%;}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:15px;margin-bottom: 15px}
+.alignright {float:right;margin-left:15px;margin-bottom: 15px}
+.aligncenter {display:block;margin:0 auto 15px}
+a:focus {outline:0px solid}
+img {max-width:100%;height:auto}
+.fix {overflow:hidden}
+p {margin:0 0 15px;}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+}
+a {-webkit-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;text-decoration:none;}
+a:hover {
+  color: #ec4445;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0 none;
+}
+ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.clear{clear:both}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.project-bg-1 {
+    background-image: url(img/1.jpg)
+}
+.project-bg-2 {
+    background-image: url(img/2.jpg)
+}
+.project-bg-3 {
+    background-image: url(img/3.jpg)
+}
+.project-bg-4 {
+    background-image: url(img/4.jpg)
+}
+.project-bg-5 {
+    background-image: url(img/5.jpg)
+}
+.project-bg-6 {
+    background-image: url(img/6.jpg)
+}
+.project-bg-7 {
+    background-image: url(img/7.jpg)
+}
+.project-bg-8 {
+    background-image: url(img/8.jpg)
+}
+.project-bg-9 {
+    background-image: url(img/9.jpg)
+}
+
+
+.section-padding {
+  padding: 80px 0;
+}
+.project-filter {}
+.project-filter ul {
+  margin-bottom: 40px;
+}
+.project-filter ul li {
+  color: #66666a;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 40px;
+  padding: 5px 0;
+}
+.project-filter ul li.active {
+  border-bottom: 2px solid;
+}
+.single-project-item {
+  background-color: #ddd;
+  background-position: center center;
+  background-size: cover;
+  display: table;
+  height: 300px;
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.single-project-item:before, .single-project-item:after {
+  content: "";
+  height: 80px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 80px;
+  z-index: 2;
+}
+.single-project-item:before {
+  border-right: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.single-project-item:after {
+  border-bottom: 1px solid #666666;
+  border-left: 1px solid #666666;
+  bottom: 0;
+  left: 0;
+  top: auto;
+}
+.project-hover {
+  display: table-cell;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  padding: 25px;
+  position: relative;
+  text-align: center;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  visibility: hidden;
+  z-index: 1;
+}
+.project-hover:before {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.project-hover h2 {
+  color: #454545;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+}
+.project-hover p {
+  color: #423854;
+  margin: 0;
+}
+.single-project-item:hover .project-hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.single-project-item:hover.single-project-item:before, .single-project-item:hover.single-project-item:after {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  visibility: visible;
+}
